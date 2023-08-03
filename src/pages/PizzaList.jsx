@@ -48,9 +48,9 @@ const PizzaList = ({active}) => {
             <div>
             {pizzas.map(pizza => (
                 <div className="m-5 text-white" key={pizza.id}>
-                    <h1 className="text-3xl font-bold text-white underline">{pizza.name}</h1>
+                    <h1 className="text-3xl font-bold text-white">{pizza.name}</h1>
                     <p>{pizza.available}</p>
-                    <p>Base : {pizza.base}</p>
+                    <span>Base {pizza.base}, </span>
                     {pizza.ingredients.map(ingredient => (
                         <span>{ingredient}, </span>
                     ))}

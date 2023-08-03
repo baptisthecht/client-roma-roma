@@ -7,6 +7,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      "black" : "#000000",
       'persodark' : '#212228',
       'menu' : "#191A1E",
       'persogray' : "#717489",

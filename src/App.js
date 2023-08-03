@@ -22,6 +22,22 @@ export default function App() {
       path: "/romaroma",
       element: <PizzaList active="romaroma"/>,
     },
+    {
+      path: "/pates",
+      element: <PizzaList active="pates"/>,
+    },
+    {
+      path: "/desserts",
+      element: <PizzaList active="desserts"/>,
+    },
+    {
+      path: "/drinks",
+      element: <PizzaList active="drinks"/>,
+    },
+    {
+      path: "/divers",
+      element: <PizzaList active="divers"/>,
+    },
   ]);
 
   return (
