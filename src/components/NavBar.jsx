@@ -18,7 +18,7 @@ const NavBar = ({active}) => {
 
     return (
         <div>
-            <span className="absolute text-persogray text-4xl top-5 left-4 cursor-pointer" onClick={OpenNavBar}>
+            <span className="absolute text-persogray lg:hidden text-4xl top-5 left-4 cursor-pointer" onClick={OpenNavBar}>
                 <i className="bi bi-list-nested px-2 bg-gray-900 rounded-md"></i>
             </span>
             <div className="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] duration-1000

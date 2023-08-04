@@ -1,5 +1,5 @@
-import React, { Children } from "react";
 import NavBar from "../components/NavBar";
+import Page from "../components/Page"
 
 const Layout = ({active, children}) => {
 
@@ -10,8 +10,11 @@ const Layout = ({active, children}) => {
                 <NavBar active={active}/>
             </div>
 
-            <div className="mt-20 ml-5 lg:mt-0 lg:ml-[320px]">
+            <div className="mt-20 flex-1 ml-5 lg:mt-0 lg:ml-[320px]">
+            <Page active={active}>
             {children}
+            </Page>
+            
             </div>
         </div>
       );

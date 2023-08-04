@@ -1,5 +1,5 @@
 import AddPizza from "./pages/AddPizza.jsx";
-import PizzaList from "./pages/PizzaList.jsx";
+import CategoryPage from "./pages/CategoryPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
@@ -12,31 +12,35 @@ export default function App() {
     },
     {
       path: "/classiques",
-      element: <PizzaList active="classiques"/>,
+      element: <CategoryPage active="classiques"/>,
     },
     {
       path: "/incontournables",
-      element: <PizzaList active="incontournables"/>,
+      element: <CategoryPage active="incontournables"/>,
     },
     {
       path: "/romaroma",
-      element: <PizzaList active="romaroma"/>,
+      element: <CategoryPage active="romaroma"/>,
+    },
+    {
+      path: "/pizzadumoment",
+      element: <CategoryPage active="pizzadumoment"/>,
     },
     {
       path: "/pates",
-      element: <PizzaList active="pates"/>,
+      element: <CategoryPage active="pates"/>,
     },
     {
       path: "/desserts",
-      element: <PizzaList active="desserts"/>,
+      element: <CategoryPage active="desserts"/>,
     },
     {
       path: "/drinks",
-      element: <PizzaList active="drinks"/>,
+      element: <CategoryPage active="drinks"/>,
     },
     {
       path: "/divers",
-      element: <PizzaList active="divers"/>,
+      element: <CategoryPage active="divers"/>,
     },
   ]);
 
