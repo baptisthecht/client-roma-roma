@@ -10,7 +10,7 @@ const Layout = ({active, children}) => {
                 <NavBar active={active}/>
             </div>
 
-            <div className="mt-20 flex-1 ml-5 lg:mt-0 lg:ml-[320px]">
+            <div id="page" className="mt-20 flex-1 ml-5 lg:mt-0 lg:ml-[320px]">
             <Page active={active}>
             {children}
             </Page>

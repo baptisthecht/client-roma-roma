@@ -1,4 +1,5 @@
 import AddPizza from "./pages/AddPizza.jsx";
+import Home from "./pages/Home.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -9,6 +10,10 @@ export default function App() {
     {
       path: "/addpizza",
       element: <AddPizza />,
+    },
+    {
+      path: "/",
+      element: <Home active="home"/>,
     },
     {
       path: "/classiques",

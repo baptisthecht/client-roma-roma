@@ -26,7 +26,7 @@ const NavBar = ({active}) => {
                 <div className="text-persogray text-xl flex flex-col justify-between">
                     <div>
                         <div className="p-2.5 mb-7 flex items-center rounded-md ">
-                            <h1 className="text-[25px] text-left ml-7 mt-7 text-white font-bold">Roma Roma Pizzeria<span className="text-red">.</span></h1>
+                            <Link to="/" className="text-[25px] text-left ml-7 mt-7 text-white font-bold">Roma Roma Pizzeria<span className="text-red">.</span></Link>
                             <i className="bi bi-x ml-20 mr-5 cursor-pointer lg:hidden" onClick={CloseNavBar}></i>
                         </div>
                         <div className="mt-6">

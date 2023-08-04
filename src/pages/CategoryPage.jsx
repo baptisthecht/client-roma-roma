@@ -62,10 +62,10 @@ const CategoryPage = ({active}) => {
     }, [url]); // Ajouter catId en tant que dépendance
              
       if (!plats) return null;
-
+        
       return (
         <Layout active={active}>
-            <div className="grid grid-cols-1 xl:grid-cols-2">
+            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-5">
             {plats.map(plat => (
                 <Card plat={plat}/>
             ))}</div>
