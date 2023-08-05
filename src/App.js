@@ -29,7 +29,7 @@ export default function App() {
     },
     {
       path: "/pizzadumoment",
-      element: <CategoryPage active="pizzadumoment"/>,
+      // ajouter element PagePizza avec l'id de la pizza n01 de la cat moment, get dans le component
     },
     {
       path: "/pates",
