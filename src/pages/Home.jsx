@@ -54,7 +54,7 @@ export default function Home({active}) {
         </div>
         <div className='mb-8'>
             <h1 className='text-3xl font-bold text-white ml-5 mb-2'>Les classiques</h1>
-            <div className="gap-5 flex items-center justify-start overflow-x-auto max-w-[1200px]">
+            <div className="gap-5 flex items-stretch justify-start overflow-x-auto max-w-[1200px]">
             {pizzasClassiques.map((plat) => (
                 <div><Card plat={plat} /></div>
             ))}

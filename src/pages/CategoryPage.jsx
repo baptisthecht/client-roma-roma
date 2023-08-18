@@ -7,8 +7,8 @@ import Card from "../components/Card.jsx"
 
 const CategoryPage = ({active}) => {
 
-    const [catId, setCatId] = React.useState(1);
-    const [plats, setPlats] = React.useState([]);
+    const [catId, setCatId] = React.useState(1)
+    const [plats, setPlats] = React.useState([])
     const [type, setType] = React.useState("")
     const [url, setUrl] = React.useState("")
 
@@ -42,6 +42,7 @@ const CategoryPage = ({active}) => {
         }
     },[active])
 
+
     useEffect(() => {
         if(type === 'pizza'){
             setUrl("http://localhost:8800/api/pizzas/getfromcategory/" + catId);
@@ -61,13 +62,13 @@ const CategoryPage = ({active}) => {
             });
     }, [url]); // Ajouter catId en tant que dépendance
              
-      if (!plats) return null;
+      if (!plats) return <Layout active={active}></Layout>;
         
       return (
         <Layout active={active}>
             <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-5">
             {plats.map(plat => (
-                <Card plat={plat}/>
+                <Card key={plat.id} plat={plat}/>
             ))}</div>
         </Layout>
       );

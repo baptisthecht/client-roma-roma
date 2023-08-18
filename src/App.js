@@ -2,6 +2,7 @@ import AddPizza from "./pages/AddPizza.jsx";
 import Home from "./pages/Home.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PizzaPage from "./pages/PizzaPage.jsx";
 
 
 export default function App() {
@@ -28,10 +29,6 @@ export default function App() {
       element: <CategoryPage active="romaroma"/>,
     },
     {
-      path: "/pizzadumoment",
-      // ajouter element PagePizza avec l'id de la pizza n01 de la cat moment, get dans le component
-    },
-    {
       path: "/pates",
       element: <CategoryPage active="pates"/>,
     },
@@ -46,6 +43,10 @@ export default function App() {
     {
       path: "/divers",
       element: <CategoryPage active="divers"/>,
+    },
+    {
+      path: "/pizza/:id",
+      element: <PizzaPage/>,
     },
   ]);
 
