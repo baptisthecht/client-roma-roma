@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PizzaPage from "./pages/PizzaPage.jsx";
+import OrderNow from "./pages/OrderNow.jsx";
 
 
 export default function App() {
@@ -11,6 +12,10 @@ export default function App() {
     {
       path: "/addpizza",
       element: <AddPizza />,
+    },
+    {
+      path: "/order",
+      element: <OrderNow />,
     },
     {
       path: "/",

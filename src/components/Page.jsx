@@ -47,7 +47,7 @@ export default function Page({active, children}) {
 
         </div>
         <div className=" mx-5 my-4 hidden lg:flex items-center border-2 border-white rounded-xl px-4 duration-300 cursor-pointer">
-            <Link to="/avis" className="text-[15px] mx-auto font-bold text-white">Laisser un avis !</Link>
+            <Link to="/order" className="text-[15px] mx-auto font-bold text-white">Commander !</Link>
         </div>
       </div>
       <div className='p-5'>

@@ -136,9 +136,9 @@ const NavBar = ({active}) => {
                             
                         </div>
                     </div>
-                    <div className="p-2.5 mx-5 mb-4 flex items-center border-2 border-white rounded-xl px-4 duration-300 cursor-pointer  hover:bg-persodark">
+                    <Link to="/order" className="p-2.5 mx-5 mb-4 flex items-center border-2 border-white rounded-xl px-4 duration-300 cursor-pointer  hover:bg-persodark">
                         <span className="text-[15px] mx-auto font-bold text-white">Commandez maintenant !</span>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

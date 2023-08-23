@@ -1,4 +1,5 @@
 import React from 'react'
+import ImageCard from './ImageCard.jsx'
 
 export default function SpecialCard({plat}) {
 
@@ -17,12 +18,12 @@ export default function SpecialCard({plat}) {
             </div>
         </div>
         <div className="w-full max-w-[1300px] min-w-[200px] h-[300px] hidden 2xl:block rounded-2xl "style={{
-          backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0), rgba(218, 172, 80, 1)), url(${process.env.PUBLIC_URL}/pizza-generic.jpeg)`,
+          backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0), rgba(218, 172, 80, 1))`,
           backgroundSize: 'cover', 
           backgroundPosition: 'center', 
-        }} ></div>  
+        }} ><ImageCard plat={plat}/></div>  
         <div className="w-full max-w-[600px] min-w-[200px] h-[300px] block 2xl:hidden rounded-2xl "style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(218, 172, 80, 1)), url(${process.env.PUBLIC_URL}/pizza-generic.jpeg)`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(218, 172, 80, 1))`,
           backgroundSize: 'cover', 
           backgroundPosition: 'center',
         }} ></div>

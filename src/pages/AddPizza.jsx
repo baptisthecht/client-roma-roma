@@ -132,7 +132,7 @@ const AddPizza = () => {
             <CheckBoxCategoryComponent inputs={inputs} name="Féculents" onChange={handleIngredientClick} elements={['Pommes de terre', 'Potatoes']}/>
             <CheckBoxCategoryComponent inputs={inputs} name="Sauces" onChange={handleIngredientClick} elements={['Sauce Curry', 'Sauce Burger', 'Sauce Cheddar']}/>
             <CheckBoxCategoryComponent inputs={inputs} name="" onChange={handleIngredientClick} elements={['Sauce BBQ', 'Sauce Samouraï', 'Sauce Poivre']}/>
-            <CheckBoxCategoryComponent inputs={inputs} name="Extras" onChange={handleIngredientClick} elements={['Jambon de parme', 'Roquette', 'Miel', 'Ail']}/>
+            <CheckBoxCategoryComponent inputs={inputs} name="Extras" onChange={handleIngredientClick} elements={['Jambon de parme', 'Roquette', 'Miel', 'Noix', 'Ail']}/>
             <CheckBoxCategoryComponent inputs={inputs} name="" onChange={handleIngredientClick} elements={['Oignons frits', 'Cornichons', 'Origan', 'Oeuf', 'Ananas']}/>
             <button className="text-white font-bold bg-gold p-3 py-5 rounded-lg mt-6" onClick={handleClick}>Ajouter</button>
           </form>
