@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FormInputComponent({label, type, placeholder, name, id, onChange}) {
+export default function FormInputComponent({label, type, placeholder, name, id, onChange, value}) {
   return (
     <div className="flex flex-col gap-1">
               <label className="text-white font-bold" htmlFor="name">{label}</label>
@@ -11,6 +11,7 @@ export default function FormInputComponent({label, type, placeholder, name, id, 
                 onChange={onChange}
                 className="p-3 rounded-lg"
                 id={id}
+                value={value}
               />
             </div>
   )

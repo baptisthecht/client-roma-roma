@@ -5,7 +5,7 @@ export default function OrderNow() {
   return (
     <Layout active="Commandez maintenant !">
         <h1 className='font-bold text-white text-center text-[2rem] my-3'>Dégustez votre pizza :</h1>
-        <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-5 py-5">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-5 py-5">
             <div className='shadow-menu shadow-xl h-auto w-full p-8 flex flex-col gap-5 rounded-xl bg-menu items-center'>
                 <h1 className='text-white font-bold text-[1.7rem] text-center'>Sur place</h1>
                 <img width="70" height="70" src={process.env.PUBLIC_URL + 'icons8-table-64.png'} alt="motorcycle"/>

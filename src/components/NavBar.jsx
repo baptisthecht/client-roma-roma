@@ -17,7 +17,7 @@ const NavBar = ({active}) => {
 
 
     return (
-        <div>
+        <div className="z-40">
             <span className="absolute text-persogray lg:hidden text-4xl top-5 left-4 cursor-pointer" onClick={OpenNavBar}>
                 <i className="bi bi-list-nested px-2 bg-gray-900 rounded-md"></i>
             </span>
@@ -35,7 +35,7 @@ const NavBar = ({active}) => {
                             </div>
                             <div className="p-2.5 mx-5 flex items-center border-2 border-gold rounded-xl px-4 duration-300 cursor-pointer  hover:bg-darkgold">
                                 <i className="bi bi-emoji-heart-eyes text-gold "></i>
-                                <Link to="/pizzadumoment" onClick={CloseNavBar} className="text-[15px] ml-5 text-gold">Pizza du moment !</Link>
+                                <Link to="/" onClick={CloseNavBar} className="text-[15px] ml-5 text-gold">Pizza du moment !</Link>
                                 
                             </div>
                             {active === "classiques" ? 
@@ -102,34 +102,23 @@ const NavBar = ({active}) => {
                             {active === "desserts" ? 
                                 <div className="before:content-[''] before:bg-white before:rounded-xl before:-translate-x-8 before:w-1.5 before:h-6 p-2.5 mt-2 mx-5 flex items-center rounded-md px-2.5 duration-300 cursor-pointer font-bold hover:text-light">
                                     <i className="bi bi-cup-hot text-light"></i>
-                                    <Link to="/desserts" onClick={CloseNavBar} className="text-[15px] ml-5 text-light ">Désserts</Link>
+                                    <Link to="/desserts" onClick={CloseNavBar} className="text-[15px] ml-5 text-light ">Desserts</Link>
                                 </div>
                             :
                                 <div className="p-2.5 mt-1 mx-5 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:text-light">
                                     <i className="bi bi-cup-hot"></i>
-                                    <Link to="/desserts" onClick={CloseNavBar} className="text-[15px] ml-5 text-gray-200">Désserts</Link>
+                                    <Link to="/desserts" onClick={CloseNavBar} className="text-[15px] ml-5 text-gray-200">Desserts</Link>
                                 </div>
                             }
                             {active === "drinks" ? 
                                 <div className="before:content-[''] before:bg-white before:rounded-xl before:-translate-x-8 before:w-1.5 before:h-6 p-2.5 mt-2 mx-5 flex items-center rounded-md px-2.5 duration-300 cursor-pointer font-bold hover:text-light">
                                     <i className="bi bi-cup-straw text-light"></i>
-                                    <Link to="/drinks" onClick={CloseNavBar} className="text-[15px] ml-5 text-light ">Boissons & Alcools</Link>
+                                    <Link to="/drinks" onClick={CloseNavBar} className="text-[15px] ml-5 text-light ">Boissons</Link>
                                 </div>
                             :
                                 <div className="p-2.5 mt-2 mx-5 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:text-light">
                                     <i className="bi bi-cup-straw"></i>
-                                    <Link to="/drinks" onClick={CloseNavBar} className="text-[15px] ml-5 text-gray-200">Boissons & Alcools</Link>
-                                </div>
-                            }
-                            {active === "divers" ? 
-                                <div className="before:content-[''] before:bg-white before:rounded-xl before:-translate-x-8 before:w-1.5 before:h-6 p-2.5 mt-2 mx-5 flex items-center rounded-md px-2.5 duration-300 cursor-pointer font-bold hover:text-light">
-                                    <i className="bi bi-balloon text-light"></i>
-                                    <Link to="/divers" onClick={CloseNavBar} className="text-[15px] ml-5 text-light ">Divers</Link>
-                                </div>
-                            :
-                                <div className="p-2.5 mt-2 mx-5 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:text-light">
-                                    <i className="bi bi-balloon"></i>
-                                    <Link to="/divers" onClick={CloseNavBar} className="text-[15px] ml-5 text-gray-200">Divers</Link>
+                                    <Link to="/drinks" onClick={CloseNavBar} className="text-[15px] ml-5 text-gray-200">Boissons</Link>
                                 </div>
                             }
                             

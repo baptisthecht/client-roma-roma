@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ImageCard({plat}) {
+export default function ImageCard({plat, path}) {
 
   const [basePath, setBasePath] = React.useState('')
 
@@ -75,35 +75,48 @@ export default function ImageCard({plat}) {
   
 
   // Récupérer les chemins d'accès en fonction des ingrédients de la pizza
-  const ingredientsPaths = plat.ingredients.map(ingredient => paths[ingredient.toLowerCase()])
 
+    const ingredientsPaths = plat.ingredients.map(ingredient => paths[ingredient.toLowerCase()])
+ 
+ 
 console.log(ingredientsPaths)
-
-  if(plat.chausson == 1){
-    return(
-      <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/calzone.png"} alt="pizza" />
-    )
-  }else {
+  if(path){
     return (
-      <div className='relative '>
-        {
-          basePath 
-          ? 
-          <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl absolute top-0 left-0" src={process.env.PUBLIC_URL + basePath} alt="pizza" />
-           :
-          <></>
-        }
-            <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/base.png"} alt="pizza" />
-        
-             {
-          ingredientsPaths.map(path => (
-            <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl absolute top-0 left-0" src={process.env.PUBLIC_URL + path} alt="pizza" />
-          ))
-        }
-       
-      </div>
-         
+      <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + path} alt="pizza" />
+    
     )
   }
+
+  if(!path){ 
+     // eslint-disable-next-line
+    if(plat.chausson == 1){
+      return(
+        <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/calzone.png"} alt="pizza" />
+      )
+      // eslint-disable-next-line
+    }else if(plat.chausson == 0) {
+      return (
+        <div className='relative'>
+          {
+            basePath 
+            ? 
+            <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl absolute top-0 left-0" src={process.env.PUBLIC_URL + basePath} alt="pizza" />
+             :
+            <></>
+          }
+              <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/base.png"} alt="pizza" />
+          
+               {
+            ingredientsPaths.map(path => (
+              <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl absolute top-0 left-0" src={process.env.PUBLIC_URL + path} alt="pizza" />
+            ))
+          }
+         
+        </div>
+           
+      )
+    }
+  }
+  
   
 }

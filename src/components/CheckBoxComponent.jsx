@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function CheckBoxComponent({ label, onClick, inputs }) {
-  const isSelected = inputs.ingredients.some((ingredient) => ingredient === label);
+export default function CheckBoxComponent({ label, onClick, inputs, ingredients }) {
+
+  const isSelected = inputs.ingredients.some((ingredient) => ingredient === label) || ingredients ? ingredients.includes(label) : false; 
+
+
 
   return (
     <button

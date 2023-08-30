@@ -15,7 +15,10 @@ module.exports = {
       'gold': "#DAAC50",
       'darkgold': "#393121",
       'red': "#D81F26",
-      'white' : 'white'
+      'white' : 'white',
+      'buttonhover' : '#2b2c32',
+      'bordeaux': '#6d071a',
+      "darkbordeaux" : "#4a0411"
     },
     extend: {},
   },

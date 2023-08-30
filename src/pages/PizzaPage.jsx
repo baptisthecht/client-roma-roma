@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout.jsx"
+import ImageCard from '../components/ImageCard.jsx'
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -23,7 +24,7 @@ const PizzaPage = () => {
   }, [id]);
 
   if (plat === null) {
-    return <div>Loading...</div>; // Ou tout autre composant de chargement que vous préférez
+    return <div>Chargement...</div>; 
   }
 
   console.log(plat);
@@ -32,7 +33,7 @@ const PizzaPage = () => {
       return (
         <Layout active={plat.name}>
             <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-5">
-                
+            <ImageCard plat={plat}/>
             </div>
         </Layout>
       );

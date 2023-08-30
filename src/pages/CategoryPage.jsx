@@ -60,7 +60,7 @@ const CategoryPage = ({active}) => {
             .catch(error => {
                 console.error("Error fetching data", error);
             });
-    }, [url]); // Ajouter catId en tant que dépendance
+    }, [url]); 
              
       if (!plats) return <Layout active={active}></Layout>;
         

@@ -18,7 +18,7 @@ export default function Page({active, children}) {
         setPageName('Les Roma Roma')
         break;
       case 'pates':
-        setPageName('Les pates')
+        setPageName('Les pâtes')
         break;
       case 'desserts':
         setPageName('Les desserts')
@@ -30,7 +30,7 @@ export default function Page({active, children}) {
         setPageName('Divers')
         break;
       case 'home':
-        setPageName('Bienvenue chez Roma Roma !')
+        setPageName('Bienvenue chez Roma Roma Pizzeria !')
         break;
       default: 
         setPageName(active)
@@ -40,15 +40,12 @@ export default function Page({active, children}) {
   }, [active])
 
   return (
-    <div className='p-2 ml-[-20px] lg:m-4 flex-row'>
-      <div className='block lg:flex justify-between p-5'>
-        <div>
+    <div className='flex-row lg:mr-5'>
+      <div className='flex lg:flex-row flex-col items-center justify-between p-5'>
           <h1 className='text-4xl font-bold text-white m-5 mb-6'>{pageName}</h1>
-
-        </div>
-        <div className=" mx-5 my-4 hidden lg:flex items-center border-2 border-white rounded-xl px-4 duration-300 cursor-pointer">
-            <Link to="/order" className="text-[15px] mx-auto font-bold text-white">Commander !</Link>
-        </div>
+          <div className="h-full flex items-center border-2 hover:bg-buttonhover text-white border-white rounded-xl px-4 duration-300 cursor-pointer">
+              <Link to="/order" className="text-[15px] mx-auto font-bold p-4">Commander !</Link>
+          </div>
       </div>
       <div className='p-5'>
         {children}
