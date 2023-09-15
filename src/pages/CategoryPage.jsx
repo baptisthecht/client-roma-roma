@@ -55,6 +55,7 @@ const CategoryPage = ({active}) => {
     useEffect(() => {
         axios.get(url)
             .then((response) => {
+                 console.log(response.data); // Vérifiez ici que response.data est un tableau
                 setPlats(response.data);
             })
             .catch(error => {
@@ -63,6 +64,7 @@ const CategoryPage = ({active}) => {
     }, [url]); 
              
       if (!plats) return <Layout active={active}></Layout>;
+      if (!Array.isArray(plats)) return <Layout active={active}></Layout>;
         
       return (
         <Layout active={active}>
