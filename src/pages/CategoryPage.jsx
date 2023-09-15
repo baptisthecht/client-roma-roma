@@ -45,9 +45,9 @@ const CategoryPage = ({active}) => {
 
     useEffect(() => {
         if(type === 'pizza'){
-            setUrl("http://localhost:8800/api/pizzas/getfromcategory/" + catId);
+            setUrl("https://1api-roma-roma.vercel.app/api/pizzas/getfromcategory/" + catId);
         }else if(type === 'pates'){
-            setUrl("http://localhost:8800/api/pastas/getall/");
+            setUrl("https://1api-roma-roma.vercel.app/api/pastas/getall/");
         }
 
     }, [catId, type])
