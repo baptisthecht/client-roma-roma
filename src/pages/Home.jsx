@@ -18,7 +18,7 @@ export default function Home({active}) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8800/api/pizzas/getall/');
+                const response = await axios.get('https://1api-roma-roma.vercel.app/api/pizzas/getall/');
                 const pizzas = response.data;
 
                 const classiques = pizzas.filter(pizza => pizza.category === "Les classiques");
