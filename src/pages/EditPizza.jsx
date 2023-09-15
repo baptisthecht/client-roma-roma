@@ -79,7 +79,7 @@ setInputs((prev) => {
 const handleClick = async (e) => {
 e.preventDefault()
 try{
-    const url = "http://localhost:8800/api/pizzas/update/" + plat.id
+    const url = "https://1api-roma-roma.vercel.app/api/pizzas/update/" + plat.id
     await axios.post(url, inputs).then(console.log('Pizza modifiée'));
     navigate('/admin')
 }catch(err){
