@@ -8,7 +8,7 @@ const PastaPage = ({active}) => {
     const [plats, setPlats] = React.useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:8800/api/pastas/getall/")
+        axios.get("https://1api-roma-roma.vercel.app/api/pastas/getall/")
             .then((response) => {
                 setPlats(response.data);
             })
