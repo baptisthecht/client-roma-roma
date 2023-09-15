@@ -3,7 +3,7 @@
 ## 👩‍💻 Évaluation de formation Studi
 Ce projet a été créé dans le cadre d'un *projet de fin de formation* dans le cadre d'une formation **Développeur web full stack** chez [Studi](https://www.studi.com/fr/formation/developpement/graduate-developpeur-web-full-stack).
 Il rend service à la pizzeria *Roma Roma* de Wattrelos.
-
+  
 
 ## 🚀 Le projet
 
