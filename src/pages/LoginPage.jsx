@@ -27,7 +27,7 @@ const LoginPage = () => {
     e.preventDefault()
     console.warn(inputs)
     try{
-        const response = await axios.post("http://localhost:8800/api/auth/login", inputs);
+        const response = await axios.post("https://1api-roma-roma.vercel.app/api/auth/login", inputs);
         signIn({
             token: response.data.token,
             expiresIn: 3600*24,
