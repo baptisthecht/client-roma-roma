@@ -76,7 +76,7 @@ const handleClick = async (e) => {
   e.preventDefault()
   console.warn(inputs)
   try{
-    await axios.post("http://localhost:8800/api/pizzas/add", inputs).then(console.log('Pizza ajoutée'));
+    await axios.post("https://1api-roma-roma.vercel.app/api/pizzas/add", inputs).then(console.log('Pizza ajoutée'));
     navigate('/admin')
   }catch(err){
     setErr(err.response.data)
