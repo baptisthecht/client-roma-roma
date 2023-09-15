@@ -13,7 +13,7 @@ const PizzaPage = () => {
   useEffect(() => {
     const fetchPlat = async () => {
       try {
-        const response = await axios.get(`http://localhost:8800/api/pizzas/get/${id}`);
+        const response = await axios.get(`https://1api-roma-roma.vercel.app/api/pizzas/get/${id}`);
         setPlat(response.data);
       } catch (error) {
         console.error("Error fetching data", error);
