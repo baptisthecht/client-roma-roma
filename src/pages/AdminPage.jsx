@@ -35,7 +35,7 @@ function formatPrenomNom(input) {
 const [plats, setPlats] = React.useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:8800/api/pizzas/getall/")
+        axios.get("https://1api-roma-roma.vercel.app/api/pizzas/getall/")
             .then((response) => {
                 setPlats(response.data);
             })
@@ -48,7 +48,7 @@ const [plats, setPlats] = React.useState([])
 
 const deleteClickButton = async (id) => {
     try{
-        const url = "http://localhost:8800/api/pizzas/delete/" + id;
+        const url = "https://1api-roma-roma.vercel.app/api/pizzas/delete/" + id;
         await axios.delete(url).then(console.log('Pizza supprimée'));
         window.location.reload(false);
     }catch(err){
