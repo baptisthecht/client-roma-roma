@@ -7,7 +7,7 @@ const BoissonsPage = ({active}) => {
         <Layout active={active}>
             <div className='mb-8'>
                 <h1 className='text-3xl font-bold text-white ml-5 mb-2'>Les softs</h1>
-                <div className="gap-5 flex items-stretch justify-start overflow-x-auto max-w-[1200px]">
+                 <div className="gap-5 flex items-center justify-start overflow-x-auto">
                     <div className='card mx-auto my-4 bg-menu shadow-lg flex-col flex justify-between rounded-3xl w-full min-w-[400px] cursor-pointer p-2 max-w-[600px]'>
                         <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/coca.png"} alt="pizza" />
                         <div className='flex items-end justify-between'>
@@ -84,7 +84,7 @@ const BoissonsPage = ({active}) => {
             </div>
             <div className='mb-8'>
                 <h1 className='text-3xl font-bold text-white ml-5 mb-2'>Les alcools</h1>
-                <div className="gap-5 flex items-stretch justify-start overflow-x-auto max-w-[1200px]">
+                 <div className="gap-5 flex items-center justify-start overflow-x-auto">
                     <div className='card mx-auto my-4 bg-menu shadow-lg flex-col flex justify-between rounded-3xl w-full min-w-[400px] cursor-pointer p-2 max-w-[600px]'>
                         <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/despe.png"} alt="pizza" />
                         <div className='flex items-end justify-between'>
@@ -137,7 +137,7 @@ const BoissonsPage = ({active}) => {
             </div>
             <div className='mb-8'>
                 <h1 className='text-3xl font-bold text-white ml-5 mb-2'>Boissons chaudes</h1>
-                <div className="gap-5 flex items-stretch justify-start overflow-x-auto max-w-[1200px]">
+                 <div className="gap-5 flex items-center justify-start overflow-x-auto">
                     <div className='card mx-auto my-4 bg-menu shadow-lg flex-col flex justify-between rounded-3xl w-full min-w-[400px] cursor-pointer p-2 max-w-[600px]'>
                         <img className="w-full max-h-[400px] h-auto object-cover rounded-2xl" src={process.env.PUBLIC_URL + "img_generator/café.png"} alt="pizza" />
                         <div className='flex items-end justify-between'>
