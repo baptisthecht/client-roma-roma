@@ -45,7 +45,7 @@ export default function Page({active, children}) {
       <div className='flex lg:flex-row flex-col items-center justify-between p-5'>
           <h1 className='text-4xl font-bold text-white m-5 mb-6'>{pageName}</h1>
           <div className="h-full flex items-center border-2 hover:bg-buttonhover text-white border-white rounded-xl px-4 duration-300 cursor-pointer">
-              <Link to="/order" className="text-[15px] mx-auto font-bold p-4">Commander !</Link>
+              <Link to="/order" className="text-[15px] mx-auto font-bold p-4 whitespace-nowrap">Commander !</Link>
           </div>
       </div>
       <div className='p-5'>
