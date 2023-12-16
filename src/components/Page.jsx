@@ -41,7 +41,7 @@ export default function Page({active, children}) {
 
   return (
     <div className='flex-row lg:mr-5'>
-      <h1 style={{color: 'red', border: '1px solid red'}} className='text-xl font-bold m-5 mb-6 uppercase p-5 rounded-xl'>Info : Ce projet n'est pas encore deployé au public, par conséquent, les ressources allouées au serveur sont faibles et les pages peuvent mettre du temps à charger. Veuillez considérer que ce 'problème' sera réglé lors du déploiement de ce site au public. </h1>
+      <h1 style={{color: 'red', border: '2px solid red'}} className='text-xl font-bold m-5 mb-6 uppercase p-5 rounded-xl'>Info : Ce projet n'est pas encore deployé au public, par conséquent, les ressources allouées au serveur sont faibles et les pages peuvent mettre du temps à charger. Veuillez considérer que ce 'problème' sera réglé lors du déploiement de ce site au public. </h1>
       <div className='flex lg:flex-row flex-col items-center justify-between p-5'>
           <h1 className='text-4xl font-bold text-white m-5 mb-6'>{pageName}</h1>
           <div className="h-full flex items-center border-2 hover:bg-buttonhover text-white border-white rounded-xl px-4 duration-300 cursor-pointer">
